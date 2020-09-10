@@ -1,21 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+<<<<<<< Updated upstream
   margin: 0px;
   padding: 0px;
+=======
+  margin: 0;
+  padding: 0;
+>>>>>>> Stashed changes
 }
 
 li {
   list-style-type: none;
 }
 
+<<<<<<< Updated upstream
 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+=======
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+   }  
+// .logo-links {
+//  color: #afb1b8;
+// }
+
+>>>>>>> Stashed changes
 .container {
   margin-left: auto;
   margin-right: auto;

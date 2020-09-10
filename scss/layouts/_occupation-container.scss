@@ -1,8 +1,8 @@
 .occupation-container {
-  display: none;
+display: none;
 
   @include for-size(desktop) {
-    margin: 0;
+    display: block;
     padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -10,6 +10,7 @@
     text-align: center;
   }
 }
+
 
 
 @include for-size(desktop) {
