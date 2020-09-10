@@ -9,7 +9,6 @@ html {
   margin: 0px;
   padding: 0px;
   margin: 0;
-  padding: 0;
 }
 
 li {
@@ -22,10 +21,6 @@ img {
   height: auto;
 }
 
-li {
-  list-style: none;
-}
-
 a {
   display: block;
   text-decoration: none;
@@ -33,11 +28,7 @@ a {
   font-style: normal;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-   }  
+
 // .logo-links {
 //  color: #afb1b8;
 // }

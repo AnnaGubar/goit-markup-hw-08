@@ -1,6 +1,7 @@
 .occupation-container {
 display: none;
 
+
   @include for-size(desktop) {
     display: block;
     padding-bottom: 50px;
@@ -48,4 +49,6 @@ display: none;
     height: 70px;
     margin-top: 224px;
   }
+
+  
 }

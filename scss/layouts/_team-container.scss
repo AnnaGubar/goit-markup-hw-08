@@ -39,7 +39,6 @@
 
 
 .team {
-  margin-top: 30px;
 
   // display: flex;
   // flex-wrap: wrap;
@@ -79,16 +78,10 @@
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 
-
-
-
-  @include for-size(desktop) {
-    margin-bottom: 94px;
-  }
 }
 
 .masters:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 
