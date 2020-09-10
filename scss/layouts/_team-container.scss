@@ -1,0 +1,150 @@
+.team-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-accent;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+  }
+}
+
+.our-team {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  color: $title-text-color;
+
+  // display: flex;
+  // flex-wrap: wrap;
+
+  // @include for-size(mobile) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
+
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+  }
+}
+
+
+.team {
+  margin-top: 30px;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // &:not(:nth-child(2n)) {
+  // @include for-size(tablet) {
+  // margin-right: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // }
+
+  // }
+
+
+  // @media screen and (min-width: 786px) and (max-width: 1200px) {
+  //   .masters:nth-last-child(-n + 2) {
+  //     margin-right: 30px;
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+
+
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.masters {
+  @include for-size(mobile) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
+}
+
+.masters:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.picture {
+  width: 100%;
+}
+
+.team * {
+  background-color: $second-accent-color;
+}
+
+.names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $text-color;
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: $text-color;
+}
+
+
+.maters-links {
+  @include for-size(desktop) {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+}
+
+
+.social-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: $first-accent-color;
+}
+
+.social-links:hover .social-icon,
+.social-links:focus .social-icon {
+  fill: $second-accent-color;
+  background-color: $first-accent-color;
+}

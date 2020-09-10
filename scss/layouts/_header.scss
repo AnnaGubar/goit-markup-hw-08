@@ -1,0 +1,144 @@
+.logo {
+ padding-top: 16px;
+ padding-bottom: 16px;
+}
+
+.header-menu,
+.contacts-header {
+ display: none;
+}
+
+.studio {
+ color: $title-text-color;
+}
+
+// @include for-size(tablet) {}
+
+// .header-menu {
+//  @include for-size(desktop) {
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//  }
+// }
+
+// .header-menu li {
+//  @include for-size(desktop) {
+//   display: block;
+//   margin-right: 50px;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//  }
+// }
+
+// .header-menu li:last-child {
+//  @include for-size(desktop) {
+//   margin-right: 0px;
+//  }
+// }
+
+// .header-menu li:first-child {
+//  margin-right: 93px;
+// }
+
+// .header-icon {
+//  vertical-align: middle;
+//  margin-right: 10px;
+//  fill: $text-color;
+// }
+
+// .nav-header a {
+//  text-decoration: none;
+// }
+
+// .header-menu a {
+//  color: $head-text-color;
+// }
+
+// .header-menu:hover,
+// .header-menu:focus {
+//  color: $first-text-accent-color;
+// }
+
+// .pages {
+//  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .contacts-header {
+//  display: flex;
+//  margin-left: auto;
+// }
+
+// .contacts-header li {
+//  margin-left: 30px;
+// }
+
+// .contacts-header li:not(:last-child) {
+//  margin-left: 0;
+// }
+
+// .nav-header {
+//  color: transparent;
+//  border-bottom: 1px solid #ececec;
+// }
+
+// .nav-header a:hover,
+// .nav-header a:focus {
+//  color: $first-text-accent-color;
+// }
+
+// .header-menu:hover,
+// .header-menu:focus {
+//  color: $first-text-accent-color;
+// }
+
+// .header-icon {
+//  fill: currentColor;
+// }
+
+// .web {
+//  font-family: Raleway, sans-serif;
+//  font-weight: 700;
+//  font-size: 26px;
+//  line-height: 1.19;
+//  color: $first-text-accent-color;
+// }
+
+// .studio {
+//  font-family: Raleway, sans-serif;
+//  font-weight: 700;
+//  font-size: 26px;
+//  line-height: 1.19;
+//  color: #000000;
+// }
+
+// .header-menu {
+//  font-weight: 500;
+//  font-size: 14px;
+//  line-height: 1.14;
+//  letter-spacing: 0.02em;
+//  text-decoration: none;
+//  color: $text-color;
+// }
+
+// .nav-header {
+//  display: flex;
+//  align-items: center;
+// }
+
+// .header-menu .current {
+//  color: $first-text-accent-color;
+// }
+
+// .current::after {
+//  content: "";
+//  display: block;
+//  width: 100%;
+//  height: 4px;
+//  border-radius: 2px;
+//  transform: translateY(32px);
+//  background: $first-text-accent-color;
+//  background-color: $first-text-accent-color;
+// }
+// }
