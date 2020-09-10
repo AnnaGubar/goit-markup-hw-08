@@ -389,31 +389,26 @@ template {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
+li {
+  list-style-type: none;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   outline: 2px solid red;
 }
 
@@ -427,6 +422,15 @@ body {
   .container {
     width: 1200px;
   }
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .logo {
@@ -533,6 +537,18 @@ body {
 .button {
   display: block;
   margin: auto;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.button:hover, .button:focus {
+  background-color: #49a5f0;
 }
 
 .list-hero {
@@ -768,10 +784,6 @@ body {
 
 .masters:not(:last-child) {
   margin-right: 30px;
-}
-
-.picture {
-  width: 100%;
 }
 
 .team * {

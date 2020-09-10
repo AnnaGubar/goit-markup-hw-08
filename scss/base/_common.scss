@@ -1,7 +1,39 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+
+  outline: 2px solid red;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 body {
@@ -12,34 +44,4 @@ body {
   letter-spacing: 0.03em;
 
   color: $text-color;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-// .logo-links {
-//  color: #afb1b8;
-// }
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  outline: 2px solid red;
-
-  @include for-size(mobile) {
-    width: 480px;
-  }
-  @include for-size(tablet) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    width: 1200px;
-  }
 }
