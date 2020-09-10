@@ -662,7 +662,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .occupation-container .occupation {
+  .occupation-container {
     margin: 0;
     padding-bottom: 50px;
     font-weight: 700;
@@ -670,19 +670,22 @@ body {
     line-height: 1.17;
     text-align: center;
   }
-  .occupation-container .occupation-list {
+}
+
+@media (min-width: 1200px) {
+  .occupation-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 94px;
   }
-  .occupation-container .occupation-title:not(:last-child) {
+  .occupation-title:not(:last-child) {
     margin-right: 30px;
   }
-  .occupation-container .image-box {
+  .image-box {
     position: relative;
   }
-  .occupation-container .white-title-box {
+  .white-title-box {
     position: absolute;
     bottom: 0;
     /* left: 0; */
@@ -690,7 +693,7 @@ body {
     height: 100%;
     margin: 0;
   }
-  .occupation-container .white-title {
+  .white-title {
     padding-top: 27px;
     font-weight: 700;
     font-size: 14px;
@@ -1104,6 +1107,18 @@ address {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.button-footer:hover, .button-footer:focus {
+  background-color: #49a5f0;
 }
 
 .button-footer::after {
