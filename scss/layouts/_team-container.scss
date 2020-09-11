@@ -17,16 +17,6 @@
   text-align: center;
   color: $title-text-color;
 
-  // display: flex;
-  // flex-wrap: wrap;
-
-  // @include for-size(mobile) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
-
-
   @include for-size(desktop) {
     display: flex;
     justify-content: center;
@@ -37,30 +27,32 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masters {
+    width: calc((100% - 30px) / 2)
+  }
+
+  // &:not(:nth-last-child(-n + 2)) {
+  //   margin-bottom: 30px;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  .masters {
+    width: calc((100% - 90px) / 4)
+  }
+}
+
 
 .team {
-
-  // display: flex;
-  // flex-wrap: wrap;
-  // &:not(:nth-child(2n)) {
-  // @include for-size(tablet) {
-  // margin-right: 30px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // }
-
-  // }
-
-
-  // @media screen and (min-width: 786px) and (max-width: 1200px) {
-  //   .masters:nth-last-child(-n + 2) {
-  //     margin-right: 30px;
-  //     margin-bottom: 0;
-  //   }
-  // }
-
-
 
   @include for-size(desktop) {
     display: flex;
@@ -82,7 +74,15 @@
 
 .masters:not(:last-child) {
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
 }
+
+
 
 
 .team * {

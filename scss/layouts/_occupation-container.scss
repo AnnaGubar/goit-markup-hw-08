@@ -1,10 +1,9 @@
 .occupation-container {
-display: none;
+  display: none;
 
 
   @include for-size(desktop) {
     display: block;
-    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -48,7 +47,18 @@ display: none;
     margin-top: 0;
     height: 70px;
     margin-top: 224px;
+    color: $second-accent-color;
   }
 
-  
+  .occupation {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.66;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color;
+  }
+
+
 }
