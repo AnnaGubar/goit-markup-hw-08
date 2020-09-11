@@ -1,8 +1,38 @@
 .footer {
- //  display: flex;
-
  background: #2F303A;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+ .footer {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .box-adress {
+  text-align: center;
+  width: calc(50% + 15px - 76px * 2);
+  margin-left: calc(76px - 15px);
+  margin-right: 76px;
+ }
+
+ .box-links {
+  text-align: center;
+  width: calc(50% + 15px - 89px * 2);
+  margin-left: 89px;
+  margin-right: calc(89px - 15px);
+
+ }
+
+ .box-emeil {
+  text-align: center;
+  width: 100%;
+  margin-left: calc(166px - 15px);
+  margin-right: calc(166px - 15px);
+  margin-top: -54px;
+ }
+}
+
 
 .logo-footer {
  margin: 0;
