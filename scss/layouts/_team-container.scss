@@ -4,15 +4,39 @@
 
   background-color: $background-accent;
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
 }
 
 .masters {
   margin-bottom: 30px;
-}
 
+  background: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 0px;
+  }
+}
 
 .our-team {
   margin-bottom: 30px;
@@ -22,7 +46,7 @@
   text-align: center;
   color: $title-text-color;
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -40,63 +64,15 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .masters {
-//     width: calc((100% - 30px) / 2);
-//   }
 
-
-@media screen and (min-width: 768px) {
-  .masters {
-    width: calc((100% - 30px) / 2);
-  }
-
-  &:nth-last-child(-n+2) {
-    margin-bottom: 0px;
-  }
-}
-
-// .masters:not(:nth-last-child(-n + 2)) {
-//   margin-bottom: 30px;
-// }
-
-
-@media screen and (min-width: 1200px) {
-  .masters {
-    width: calc((100% - 90px) / 4)
-  }
-}
 
 
 .team {
-
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
-.masters {
-  @include for-size(mobile) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-
-}
-
-.masters:not(:last-child) {
-  margin-bottom: 30px;
-
-  @include for-size(desktop) {
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-
-}
 
 
 
@@ -127,15 +103,13 @@
   color: $text-color;
 }
 
-
 .maters-links {
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-bottom: 24px;
     justify-content: center;
   }
 }
-
 
 .social-icon {
   fill: #afb1b8;
