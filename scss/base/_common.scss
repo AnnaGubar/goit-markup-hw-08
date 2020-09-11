@@ -41,17 +41,6 @@ a {
 
   outline: 2px solid red;
 
-  @include for-size(mobile) {
-    width: 480px;
-  }
-
-  @include for-size(tablet) {
-    width: 768px;
-  }
-
-  @include for-size(desktop) {
-    width: 1200px;
-  }
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -74,6 +63,5 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
-  color: $text-color;
+  color: #757575;
 }

@@ -68,7 +68,7 @@
   margin-bottom: 0;
  }
 
- @include for-size(tablet) {
+ @media screen and (min-width: 768px) {
   width: calc((100% - (2 * 30px)) / 3);
 
   &:nth-last-child(-n + 3) {
@@ -76,7 +76,7 @@
   }
  }
 
- @include for-size(desktop) {
+ @media screen and (min-width: 1200px) {
   max-width: 210px;
   height: 90px;
   width: calc((100% - (5 * 30px)) / 6);

@@ -13,7 +13,7 @@
 
   text-align: center;
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
@@ -65,7 +65,7 @@
       url('../images/hero@2x-480.jpg');
   }
 
-  @include for-size(tablet) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%),
       url("../images/hero-768.jpg");
@@ -79,7 +79,7 @@
     }
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%),

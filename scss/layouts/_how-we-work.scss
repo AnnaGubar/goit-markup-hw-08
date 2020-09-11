@@ -18,7 +18,7 @@
 
 .line>li {
 
- @include for-size(tablet) {
+ @media screen and (min-width: 768px) {
   width: calc((100% - 30px) / 2);
 
   &:not(:nth-child(2n)) {
@@ -26,7 +26,7 @@
   }
  }
 
- @include for-size(desktop) {
+ @media screen and (min-width: 1200px) {
   width: calc((100% - 30px * 3) / 4);
 
   &:not(:last-child) {
@@ -60,7 +60,7 @@
 
  color: $title-text-color;
 
- @include for-size(tablet) {
+ @media screen and (min-width: 768px) {
   text-align: left;
  }
 }

@@ -38,8 +38,8 @@
 
 .menu-title:hover,
 .menu-title:focus {
-  color: $second-text-accent-color;
-  background: $first-text-accent-color;
+  color: $second-accent-color;
+  background: $first-accent-color;
 }
 
 
@@ -55,7 +55,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: $head-text-color;
+  color: $text-color;
 }
 
 .description-title {

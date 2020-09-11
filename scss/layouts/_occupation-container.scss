@@ -2,9 +2,8 @@
   display: none;
 
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: block;
-    padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -14,7 +13,7 @@
 
 
 
-@include for-size(desktop) {
+@media screen and (min-width: 1200px) {
   .occupation-list {
     display: flex;
     padding-bottom: 94px;
@@ -52,6 +51,7 @@
   }
 
   .occupation {
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.66;
