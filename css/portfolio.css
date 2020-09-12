@@ -1222,6 +1222,7 @@ address {
     line-height: 1.14;
     margin-top: 72px;
     margin-bottom: 20px;
+    text-align: start;
   }
   .input-footer {
     display: inline-block;
@@ -1241,6 +1242,11 @@ address {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2f303a;
+  }
+  .button-footer {
+    display: inline-block;
+    position: absolute;
+    right: -990px;
   }
   .box-links {
     width: 270px;
