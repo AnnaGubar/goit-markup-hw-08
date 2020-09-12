@@ -15,7 +15,112 @@
 // ----------------------------------------
 
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+ .header-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .logo {
+  margin-right: 88px;
+ }
+
+ .header-menu li {
+  display: block;
+  margin-right: 50px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+ }
+
+ .header-menu li:last-child {
+  margin-right: 0px;
+ }
+
+ .header-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: $text-color;
+ }
+
+ .header-menu a {
+  color: $title-text-color;
+ }
+
+ .header-menu:hover,
+ .header-menu:focus {
+  color: $first-accent-color;
+ }
+
+ .pages {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .contacts-header {
+  display: inline-block;
+  margin-left: auto;
+ }
+
+
+ .contacts-header li:first-child {
+  margin-bottom: 10px;
+ }
+
+
+
+ .contacts-header li:not(:last-child) {
+  margin-left: 0;
+ }
+
+ .nav-header {
+  color: transparent;
+  border-bottom: 1px solid #ececec;
+ }
+
+ .nav-header a:hover,
+ .nav-header a:focus {
+  color: $first-accent-color;
+ }
+
+ .header-menu:hover,
+ .header-menu:focus {
+  color: $first-accent-color;
+ }
+
+ .header-icon {
+  fill: currentColor;
+ }
+
+ .header-menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $text-color;
+ }
+
+ .nav-header {
+  display: flex;
+  align-items: center;
+ }
+
+ .header-menu .current {
+  color: $first-accent-color;
+ }
+
+ .current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translateY(26px);
+  background: $first-accent-color;
+  background-color: $first-accent-color;
+ }
+}
 
 @media screen and (min-width: 1200px) {
  .header-menu {
@@ -46,23 +151,6 @@
   fill: $text-color;
  }
 
- .nav-header a {
-  text-decoration: none;
- }
-
- .header-menu a {
-  color: $title-text-color;
- }
-
- .header-menu:hover,
- .header-menu:focus {
-  color: $first-accent-color;
- }
-
- .pages {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
  .contacts-header {
   display: flex;
   margin-left: auto;
@@ -77,66 +165,8 @@
  }
 
  .nav-header {
-  color: transparent;
-  border-bottom: 1px solid #ececec;
- }
-
- .nav-header a:hover,
- .nav-header a:focus {
-  color: $first-accent-color;
- }
-
- .header-menu:hover,
- .header-menu:focus {
-  color: $first-accent-color;
- }
-
- .header-icon {
-  fill: currentColor;
- }
-
- .web {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: $first-accent-color;
- }
-
- .studio {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #000000;
- }
-
- .header-menu {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $text-color;
- }
-
- .nav-header {
   display: flex;
   align-items: center;
  }
 
- .header-menu .current {
-  color: $first-accent-color;
- }
-
- .current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  transform: translateY(32px);
-  background: $first-accent-color;
-  background-color: $first-accent-color;
- }
 }

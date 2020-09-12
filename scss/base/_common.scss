@@ -28,18 +28,13 @@ a {
   font-style: normal;
 }
 
-
-// .logo-links {
-//  color: #afb1b8;
-// }
-
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
 
   @media screen and (min-width: 480px) {
@@ -54,8 +49,6 @@ a {
     width: 1200px;
   }
 }
-
-
 
 body {
   font-family: Roboto, sans-serif;
