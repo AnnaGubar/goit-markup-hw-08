@@ -320,6 +320,8 @@
       </div>
     </div>
   </footer>
+
+
   <div class="backdrop is-hidden" data-modal>
     <form class="form">
       <div class="modal"><button class="btn-close" data-modal-close><svg class="close" width="11" height="11">
@@ -342,11 +344,15 @@
           <div class="line-list"><label class="form-label" for="message">Комментарий</label><textarea
               class="form-textarea" name="message" placeholder="Введите текст" id="message"></textarea></div>
         </div>
-        <div class="checkbox"><label class="checkbox-label"><input class="checkbox-input" type="checkbox"
-              name="checkbox" />Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия
-              договора</a><span class="custom-checkbox"></span></label>
+        <div class="checkbox">
+          <label class="checkbox-label">
+            <input class="checkbox-input" type="checkbox" name="checkbox" />Соглашаюсь с рассылкой и принимаю <a
+              class="form-link" href="">Условия
+              договора</a><span class="custom-checkbox"></span>
+          </label>
+          <!-- <button class="form-button">Отправить</button> -->
         </div>
-        <button class="form-button">Отправить</button>
+        <div class="modal-button"><button class="form-button">Отправить</button></div>
       </div>
     </form>
   </div>

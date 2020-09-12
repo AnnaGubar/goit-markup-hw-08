@@ -559,12 +559,25 @@ body {
           transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  max-width: 528px;
-  max-height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .btn-close {
@@ -655,7 +668,7 @@ body {
 
 .line-list input,
 textarea {
-  width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -745,6 +758,8 @@ textarea {
 }
 
 .form-link {
+  display: inline;
+  text-decoration: underline;
   color: #2196f3;
 }
 
@@ -759,9 +774,31 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .custom-checkbox {
+    bottom: 102px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .custom-checkbox {
+    margin-top: -2px;
+  }
+}
+
 .checkbox-label {
   display: block;
   padding-left: 72px;
+  font-size: 12px;
+  line-height: 1.166;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .checkbox-input {
@@ -785,7 +822,6 @@ textarea {
 
 .form-button {
   margin-top: 30px;
-  margin-left: 165px;
   margin-bottom: 40px;
   width: 200px;
   height: 50px;
@@ -799,6 +835,30 @@ textarea {
   border-radius: 4px;
   border: none;
   position: relative;
+}
+
+@media screen and (max-width: 479px) {
+  .form-button {
+    margin-left: 65px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form-button {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-button {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-button {
+    width: calc(100%/2);
+  }
 }
 
 .hero {
