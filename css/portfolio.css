@@ -640,6 +640,7 @@ body {
 
 .form-input {
   margin-bottom: 10px;
+  margin-top: 4px;
   padding-left: 42px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -940,94 +941,6 @@ textarea {
   background: #2F303A;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .box-adress {
-    text-align: center;
-    width: calc(50% + 15px - 76px * 2);
-    margin-left: calc(76px - 15px);
-    margin-right: 76px;
-  }
-  .box-links {
-    text-align: center;
-    width: calc(50% + 15px - 89px * 2);
-    margin-left: 89px;
-    margin-right: calc(89px - 15px);
-  }
-  .box-emeil {
-    text-align: center;
-    width: 100%;
-    margin-left: calc(166px - 15px);
-    margin-right: calc(166px - 15px);
-    margin-top: -54px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: #2f303a;
-  }
-  .box-adress {
-    width: 270px;
-    margin-right: 30px;
-  }
-  .logo-footer {
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-  address {
-    font-style: normal;
-  }
-  .contacts li:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .contacts li:last-child {
-    margin-bottom: 60px;
-  }
-  .title-footer {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    margin-top: 72px;
-    margin-bottom: 20px;
-  }
-  .input-footer {
-    display: inline-block;
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    margin-right: 12px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    list-style: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-  }
-  .box-links {
-    width: 270px;
-    margin-right: 30px;
-  }
-  .box-emeil {
-    width: 570px;
-  }
-}
-
 .logo-footer {
   margin: 0;
   padding-top: 60px;
@@ -1241,5 +1154,100 @@ address {
   top: 50%;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .box-adress {
+    text-align: center;
+    width: calc(50% + 15px - 76px * 2);
+    margin-left: calc(76px - 15px);
+    margin-right: 76px;
+  }
+  .box-links {
+    text-align: center;
+    width: calc(50% + 15px - 89px * 2);
+    margin-left: 89px;
+    margin-right: calc(89px - 15px);
+  }
+  .box-emeil {
+    text-align: center;
+    width: 100%;
+    margin-left: calc(166px - 15px);
+    margin-right: calc(166px - 15px);
+    margin-top: -54px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #2f303a;
+  }
+  .logo-footer {
+    text-align: start;
+  }
+  .box-adress {
+    width: 270px;
+    margin-right: 30px;
+  }
+  address {
+    font-style: normal;
+  }
+  .adress-footer {
+    text-align: start;
+  }
+  .links-footer {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+  .contacts li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contacts li:last-child {
+    margin-bottom: 60px;
+  }
+  .title-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 72px;
+    margin-bottom: 20px;
+  }
+  .input-footer {
+    display: inline-block;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+  }
+  .box-links {
+    width: 270px;
+    margin-right: 30px;
+  }
+  .box-emeil {
+    width: 570px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
