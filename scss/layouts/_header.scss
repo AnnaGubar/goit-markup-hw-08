@@ -47,6 +47,7 @@
 
 .mobile-menu {
  display: none;
+ z-index: 1;
 
  position: absolute;
  padding: 60px 20px;
@@ -67,8 +68,12 @@
   0px 2px 4px rgba(0, 0, 0, 0.08),
   0px 1px 3px rgba(0, 0, 0, 0.16);
 
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
  &>.mobile-menu-pages {
   color: $title-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  &.is-open {
@@ -77,6 +82,8 @@
 
  & .mobile-menu-pages {
   margin-bottom: 60px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 
@@ -88,8 +95,10 @@
   margin-bottom: 18px;
  }
 
+ & a {
+  display: inline-block;
+ }
 }
-
 
 .header-icon {
  vertical-align: middle;
@@ -97,17 +106,32 @@
  fill: $text-color;
 }
 
-// .current::after {
-//  content: "";
-//  display: block;
-//  width: 100%;
-//  height: 4px;
-//  border-radius: 2px;
-//  transform: translateY(26px);
-//  background: $first-accent-color;
-//  background-color: $first-accent-color;
-// }
+.current::after {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 4px;
+ border-radius: 2px;
+ transform: translateY(26px);
+ background: $first-accent-color;
+ background-color: $first-accent-color;
 
+}
+
+
+.current {
+ color: $first-accent-color;
+}
+
+.mobile-pages:hover,
+.mobile-pages:focus {
+ color: $first-accent-color;
+}
+
+.mobile-menu-pages a:hover,
+.mobile-menu-pages a:focus {
+ color: $first-accent-color;
+}
 
 
 
@@ -126,7 +150,6 @@
  .logo-logo {
   display: block;
  }
-
 
  .header-menu {
   display: flex;
@@ -168,12 +191,9 @@
   margin-left: auto;
  }
 
-
  .contacts-header li:first-child {
   margin-bottom: 10px;
  }
-
-
 
  .contacts-header li:not(:last-child) {
   margin-left: 0;
@@ -216,16 +236,6 @@
   color: $first-accent-color;
  }
 
- .current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  transform: translateY(26px);
-  background: $first-accent-color;
-  background-color: $first-accent-color;
- }
 }
 
 @media screen and (min-width: 1200px) {
