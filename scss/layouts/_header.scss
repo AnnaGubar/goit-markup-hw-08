@@ -29,6 +29,7 @@
  top: 10px;
 
  border: none;
+ outline: none;
  background: transparent;
  color: $title-text-color;
 
@@ -44,6 +45,15 @@
   display: none;
  }
 }
+
+.menu-button>.icon-menu:hover,
+.menu-button>.icon-menu:focus,
+.menu-button>.icon-cross:hover,
+.menu-button>.icon-cross:focus {
+ color: $first-accent-color;
+ cursor: pointer;
+}
+
 
 .mobile-menu {
  display: none;
