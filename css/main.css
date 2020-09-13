@@ -453,6 +453,10 @@ body {
   color: #757575;
 }
 
+.logo-logo {
+  display: none;
+}
+
 .logo {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -467,8 +471,16 @@ body {
   color: #212121;
 }
 
+.none-for-tablet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .menu-button {
-  position: absolute;
   right: 10px;
   top: 10px;
   border: none;
@@ -486,12 +498,6 @@ body {
 
 .menu-button.is-open .icon-menu {
   display: none;
-}
-
-@media screen and (min-width: 580px) and (max-width: 767px) {
-  .menu-button {
-    right: 90px;
-  }
 }
 
 .mobile-menu {
@@ -541,8 +547,12 @@ body {
 @media screen and (min-width: 768px) {
   .menu-button,
   .mobile-menu,
-  .mobile-menu.is-open {
+  .mobile-menu.is-open,
+  .none-for-tablet {
     display: none;
+  }
+  .logo-logo {
+    display: block;
   }
   .header-menu {
     display: -webkit-box;

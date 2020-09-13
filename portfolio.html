@@ -13,28 +13,49 @@
   <header>
     <div class="container">
 
+
       <nav class="nav-header">
-        <a href="./" class="logo">
-          <span class="web">Web</span>
-          <span class="studio">Studio</span>
-        </a>
+        <div class="logo-logo"><a href="./" class="logo">
+            <span class="web">Web</span>
+            <span class="studio">Studio</span>
+          </a></div>
         <ul class="header-menu">
-          <li><a class="pages" href="./index.html">Студия</a></li>
-          <li><a class="pages current" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="pages current" href="./index.html">Студия</a></li>
+          <li><a class="pages" href="./portfolio.html">Портфолио</a></li>
           <li><a class="pages" href="">Контакты</a></li>
         </ul>
         <ul class="contacts-header">
-          <li class="header-menu-contacts"><a class="header-menu" href="mailto:info@devstudio.com"><svg
-                class="header-icon" width="16" height="11.2">
+          <li class="header-menu-contacts">
+            <a class="header-menu" href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="11.2">
                 <use href="./images/sprite.svg#icon-henvelope"></use>
-              </svg>info@devstudio.com </a></li>
-          <li class="header-menu-contacts"><a class="header-menu" href="tel:+380961111111"><svg class="header-icon"
-                width="10" height="14.94">
+              </svg>info@devstudio.com
+            </a>
+          </li>
+          <li class="header-menu-contacts">
+            <a class="header-menu" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="14.94">
                 <use href="./images/sprite.svg#icon-hsmartphone"></use>
-              </svg>+38 096 111 11 11 </a></li>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
         </ul>
 
         <!-- -------------------------------- -->
+
+        <div class="none-for-tablet">
+          <a href="./" class="logo">
+            <span class="web">Web</span>
+            <span class="studio">Studio</span>
+          </a>
+          <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
+            data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/sprite.svg#close"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-navigation"></use>
+            </svg>
+          </button></div>
+
 
         <div class="mobile-menu is-open" id="mobile-menu" data-menu>
 
@@ -67,13 +88,6 @@
 
       <!-- ---------------------------------------------- -->
 
-      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
-        data-menu-button>
-        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="icon-cross" href="./images/sprite.svg#close"></use>
-          <use class="icon-menu" href="./images/sprite.svg#icon-navigation"></use>
-        </svg>
-      </button>
 
 
 
