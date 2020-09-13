@@ -34,13 +34,19 @@
  &.is-open .icon-menu {
   display: none;
  }
+
+ @media screen and (min-width: 580px) and (max-width: 767px) {
+  right: 90px;
+ }
+
+
 }
 
 .mobile-menu {
  display: none;
 
  position: absolute;
- padding: 0px 20px;
+ padding: 60px 20px;
  // margin-bottom: 60px;
  text-align: center;
  /* top: 100%; */
@@ -67,7 +73,6 @@
  }
 
  & .mobile-menu-pages {
-  margin-top: 60px;
   margin-bottom: 60px;
  }
 
@@ -80,9 +85,6 @@
   margin-bottom: 18px;
  }
 
- // & .mobile-menu-contacts {
- //  margin-bottom: 60px;
- // }
 }
 
 

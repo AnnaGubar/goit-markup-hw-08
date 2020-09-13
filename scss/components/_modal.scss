@@ -243,9 +243,11 @@ textarea {
 }
 
 .form-button {
- margin-top: 30px;
- // margin-left: 165px;
- margin-bottom: 40px;
+
+ margin: auto;
+ display: block;
+ margin-top: 20px;
+
  width: 200px;
  height: 50px;
 
@@ -258,11 +260,11 @@ textarea {
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  border-radius: 4px;
  border: none;
- position: relative;
-
 
  @media screen and (max-width: 479px) {
-  margin-left: 65px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
  }
 
  @media screen and (min-width: 480px) {
@@ -271,12 +273,5 @@ textarea {
 
  @media screen and (min-width: 1200px) {
   margin-left: 165px;
- }
-}
-
-
-.modal-button {
- @media screen and (max-width: 1199px) {
-  width: calc(100%/2);
  }
 }
